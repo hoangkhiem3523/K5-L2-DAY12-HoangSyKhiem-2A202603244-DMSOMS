@@ -1,0 +1,38 @@
+﻿image,label,field,issue,mine,peer,verdict,guideline_rule,action
+D02.png,person,seatbelt,khác giá trị (IoU=0.98),not_worn,unknown,mine,4.7,Giữ not_worn vì thấy rõ tài xế không thắt dây
+D03.png,face13,lip_upper.occluded,khác cờ,0,1,mine,4.6,Giữ occluded=0 vì mép môi trên vẫn quan sát được
+D04.png,person,seatbelt,khác giá trị (IoU=0.89),worn_incorrect,worn_correct,peer,4.7,Đã sửa worn_incorrect -> worn_correct trong export_final_v2.zip
+D04.png,face13,left_eye_outer.occluded,khác cờ,1,0,mine,4.6,Giữ occluded=1 để khớp với eye_left/eye_right=unknown do vùng mắt bị che/mờ
+D04.png,face13,left_eye_inner.occluded,khác cờ,1,0,mine,4.6,Giữ occluded=1 để khớp với eye_left/eye_right=unknown do vùng mắt bị che/mờ
+D04.png,face13,left_eye_upper.occluded,khác cờ,1,0,mine,4.6,Giữ occluded=1 để khớp với eye_left/eye_right=unknown do vùng mắt bị che/mờ
+D04.png,face13,left_eye_lower.occluded,khác cờ,1,0,mine,4.6,Giữ occluded=1 để khớp với eye_left/eye_right=unknown do vùng mắt bị che/mờ
+D04.png,face13,right_eye_outer.occluded,khác cờ,1,0,mine,4.6,Giữ occluded=1 để khớp với eye_left/eye_right=unknown do vùng mắt bị che/mờ
+D04.png,face13,right_eye_inner.occluded,khác cờ,1,0,mine,4.6,Giữ occluded=1 để khớp với eye_left/eye_right=unknown do vùng mắt bị che/mờ
+D04.png,face13,right_eye_upper.occluded,khác cờ,1,0,mine,4.6,Giữ occluded=1 để khớp với eye_left/eye_right=unknown do vùng mắt bị che/mờ
+D04.png,face13,right_eye_lower.occluded,khác cờ,1,0,mine,4.6,Giữ occluded=1 để khớp với eye_left/eye_right=unknown do vùng mắt bị che/mờ
+D05.png,phone,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.7,Không vẽ phone vì tay ở tư thế nghe nhưng không thấy cạnh/góc/màn hình điện thoại nào
+D06.png,face,eye_left,khác giá trị (IoU=0.81),unknown,open,mine,"4.4-2, 4.5",Giữ eye_left=unknown và eye_right=open đúng trái/phải người lái xoay 90° và khớp face13
+D06.png,face,eye_right,khác giá trị (IoU=0.81),open,unknown,mine,"4.4-2, 4.5",Giữ eye_left=unknown và eye_right=open đúng trái/phải người lái xoay 90° và khớp face13
+D06.png,face,gaze_zone,khác giá trị (IoU=0.81),mirror_l,other,mine,4.5,Giữ mirror_l theo hướng quay đầu và mắt phải về gương trái
+D06.png,face,glasses,khác giá trị (IoU=0.81),unknown,clear,mine,"4.4-1, 4.5",Giữ unknown vì không nhìn rõ vùng mắt/tròng kính trên ảnh NIR
+D06.png,face13,left_eye_outer.occluded,khác cờ,0,1,mine,4.6,"Giữ outside=1, occluded=0 vì mắt trái bị khuất góc nghiêng không đoán chắc được vị trí"
+D06.png,face13,left_eye_outer.outside,khác cờ,1,0,mine,4.6,"Giữ outside=1, occluded=0 vì mắt trái bị khuất góc nghiêng không đoán chắc được vị trí"
+D06.png,face13,left_eye_inner.occluded,khác cờ,0,1,mine,4.6,"Giữ outside=1, occluded=0 vì mắt trái bị khuất góc nghiêng không đoán chắc được vị trí"
+D06.png,face13,left_eye_inner.outside,khác cờ,1,0,mine,4.6,"Giữ outside=1, occluded=0 vì mắt trái bị khuất góc nghiêng không đoán chắc được vị trí"
+D06.png,face13,left_eye_upper.occluded,khác cờ,0,1,mine,4.6,"Giữ outside=1, occluded=0 vì mắt trái bị khuất góc nghiêng không đoán chắc được vị trí"
+D06.png,face13,left_eye_upper.outside,khác cờ,1,0,mine,4.6,"Giữ outside=1, occluded=0 vì mắt trái bị khuất góc nghiêng không đoán chắc được vị trí"
+D06.png,face13,left_eye_lower.occluded,khác cờ,0,1,mine,4.6,"Giữ outside=1, occluded=0 vì mắt trái bị khuất góc nghiêng không đoán chắc được vị trí"
+D06.png,face13,left_eye_lower.outside,khác cờ,1,0,mine,4.6,"Giữ outside=1, occluded=0 vì mắt trái bị khuất góc nghiêng không đoán chắc được vị trí"
+S02_ir.png,infant_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,"4.1, 4.8",Giữ infant_seat (nôi sơ sinh) tại ghế rear_right
+S02_ir.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,mine,"4.1, 4.8",Giữ infant_seat (nôi sơ sinh) tại ghế rear_right
+S02_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,peer,4.2,Đã bổ sung box face cho người lớn ở ghế rear_left trong export_final_v2.zip
+S02_rgb.png,frame_meta,light,khác giá trị,unknown,day,mine,3,Giữ light=unknown vì SVIRO là ảnh dựng tổng hợp
+S02_rgb.png,infant_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,"4.1, 4.8",Giữ infant_seat (nôi sơ sinh) tại ghế rear_right
+S02_rgb.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,mine,"4.1, 4.8",Giữ infant_seat (nôi sơ sinh) tại ghế rear_right
+S02_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,peer,4.2,Đã bổ sung box face cho người lớn ở ghế rear_left trong export_final_v2.zip
+S03_rgb.png,frame_meta,light,khác giá trị,unknown,day,mine,3,Giữ light=unknown vì SVIRO là ảnh dựng tổng hợp
+S04_rgb.png,frame_meta,light,khác giá trị,unknown,day,mine,3,Giữ light=unknown vì SVIRO là ảnh dựng tổng hợp
+S05_rgb.png,frame_meta,light,khác giá trị,unknown,day,mine,3,Giữ light=unknown vì SVIRO là ảnh dựng tổng hợp
+S06_rgb.png,frame_meta,light,khác giá trị,unknown,day,mine,3,Giữ light=unknown vì SVIRO là ảnh dựng tổng hợp
+S07_rgb.png,frame_meta,light,khác giá trị,unknown,day,mine,3,Giữ light=unknown vì SVIRO là ảnh dựng tổng hợp
+S08_rgb.png,frame_meta,light,khác giá trị,unknown,day,mine,3,Giữ light=unknown vì SVIRO là ảnh dựng tổng hợp

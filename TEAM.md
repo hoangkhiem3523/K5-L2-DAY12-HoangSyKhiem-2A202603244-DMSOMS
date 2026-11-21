@@ -4,7 +4,7 @@ Mã bộ ảnh: **G07** · Hình thức: cá nhân
 
 | Họ tên | MSSV | Đã gán đủ 22 ảnh? | Review chéo với (peer diff) | Số dòng disagreement đã xử lý |
 |---|---|---|---|---|
-| Hoàng Sỹ Khiêm | 2A202603244 | có | lucky (`lucky.zip`, cùng mã G07) | 37 / 37 dòng |
+| Hoàng Sỹ Khiêm | 2A202603244 | có | Hoàng Thuận Thiên (`2A202603270`, cùng mã G07) | 37 / 37 dòng |
 
 Ca hai bạn vẫn không thống nhất và đã hỏi coach (ghi tên ảnh + đối tượng):
 

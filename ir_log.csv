@@ -1,0 +1,7 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+S03_ir,IR_sim,"Mất thông tin màu sắc và họa tiết bề mặt trên vật để ở ghế rear_right, chỉ còn độ sáng/tối",object.type,"Phải dựa hoàn toàn vào hình dáng khối để phân loại là bag thay vì dựa vào màu"
+S07_ir,IR_sim,"Độ tương phản vùng lòng ghế trẻ em ở rear_middle thấp hơn bản RGB, khó quan sát chi tiết bên trong nếu không tăng sáng",child_seat.occupied,"Phải chỉnh brightness/contrast trên CVAT để kiểm chứng trạng thái occupied=no thay vì đoán"
+S08_ir,IR_sim,"Mất màu sắc trang phục và giảm tương phản chi tiết giữa ghế trẻ em và người ngồi ở hàng sau so với S08_rgb",child_seat.occupied / seatbelt,"Giữ kỷ luật chỉ gán theo phần nhìn rõ trên ảnh IR (seatbelt=not_worn, không suy màu từ RGB)"
+D04,real_IR,"Ảnh NIR có tròng kính cận (glasses=clear) gây mờ/phản xạ vùng mắt, không nhìn rõ trạng thái khe mắt mở hay khép",eye_left / eye_right,"Ghi cả hai mắt là unknown theo quy tắc §4.4-1, không đoán thành open hay closed"
+D05,real_IR,"Ảnh NIR vùng mặt tối/mờ và không phân biệt rõ gọng/tròng kính cũng như khe mắt",glasses / eye_left / eye_right / gaze_zone,"Ghi glasses=unknown, eye_left=unknown, eye_right=unknown và gaze_zone=other thay vì đoán"
+D06,real_IR,"Góc nghiêng mặt xoay 90° kết hợp đặc trưng ảnh NIR khiến mắt trái bị khuất hẳn khỏi khung nhìn và khó nhận diện kính",eye_left / glasses / face13,"Đặt eye_left=unknown, bật cờ outside=1 cho cả 4 điểm left_eye_* trên face13 và giữ glasses=unknown"
